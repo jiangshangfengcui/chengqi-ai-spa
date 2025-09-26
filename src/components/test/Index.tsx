@@ -1,5 +1,5 @@
 import { atom, useAtomValue } from 'jotai'
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { useImmer } from '@hooks/useImmer'
 import * as styles from './style.module.css'
 

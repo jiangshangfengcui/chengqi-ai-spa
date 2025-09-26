@@ -16,7 +16,7 @@ const LoadingExample: React.FC<LoadingProps> = ({
     large: 'w-12 h-12',
   }
 
-  const [state, setState] = useState(1)
+  // const [state, setState] = useState(1)
   return (
     <div className="flex flex-col items-center justify-center gap-3">
       <div

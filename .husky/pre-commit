@@ -1,2 +1,5 @@
+#! /usr/bin/env sh
+echo "🔍 Running ESLint check..."
+
 yarn run lint
 yarn run test
