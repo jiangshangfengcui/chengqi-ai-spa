@@ -26,7 +26,7 @@
     "unmatched": 0,
     "updated": 0
   },
-  "startTime": 1758711809859,
+  "startTime": 1758878814887,
   "success": false,
   "testResults": [
     {
@@ -37,16 +37,16 @@
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1758711810121,
-        "loadTestEnvironmentEnd": 1758711809937,
-        "loadTestEnvironmentStart": 1758711809892,
-        "runtime": 183,
-        "setupAfterEnvEnd": 1758711810071,
-        "setupAfterEnvStart": 1758711810053,
-        "setupFilesEnd": 1758711809938,
-        "setupFilesStart": 1758711809938,
+        "end": 1758878815115,
+        "loadTestEnvironmentEnd": 1758878814958,
+        "loadTestEnvironmentStart": 1758878814921,
+        "runtime": 156,
+        "setupAfterEnvEnd": 1758878815067,
+        "setupAfterEnvStart": 1758878815065,
+        "setupFilesEnd": 1758878814959,
+        "setupFilesStart": 1758878814959,
         "slow": false,
-        "start": 1758711809938
+        "start": 1758878814959
       },
       "skipped": false,
       "snapshot": {
@@ -65,7 +65,7 @@
             "formatWalletAddress 函数测试",
             "基本功能测试"
           ],
-          "duration": 2,
+          "duration": 1,
           "failing": false,
           "failureDetails": [],
           "failureMessages": [],
@@ -74,27 +74,9 @@
           "location": null,
           "numPassingAsserts": 1,
           "retryReasons": [],
-          "startAt": 1758711810080,
+          "startAt": 1758878815072,
           "status": "passed",
           "title": "应该正确格式化标准的以太坊地址（带0x前缀）"
-        },
-        {
-          "ancestorTitles": [
-            "formatWalletAddress 函数测试",
-            "基本功能测试"
-          ],
-          "duration": 1,
-          "failing": false,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "formatWalletAddress 函数测试 基本功能测试 应该正确格式化不带0x前缀的地址",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 1,
-          "retryReasons": [],
-          "startAt": 1758711810082,
-          "status": "passed",
-          "title": "应该正确格式化不带0x前缀的地址"
         },
         {
           "ancestorTitles": [
@@ -105,12 +87,30 @@
           "failing": false,
           "failureDetails": [],
           "failureMessages": [],
+          "fullName": "formatWalletAddress 函数测试 基本功能测试 应该正确格式化不带0x前缀的地址",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1758878815074,
+          "status": "passed",
+          "title": "应该正确格式化不带0x前缀的地址"
+        },
+        {
+          "ancestorTitles": [
+            "formatWalletAddress 函数测试",
+            "基本功能测试"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
           "fullName": "formatWalletAddress 函数测试 基本功能测试 应该使用默认参数（startLength=6, endLength=4）",
           "invocations": 1,
           "location": null,
           "numPassingAsserts": 1,
           "retryReasons": [],
-          "startAt": 1758711810083,
+          "startAt": 1758878815074,
           "status": "passed",
           "title": "应该使用默认参数（startLength=6, endLength=4）"
         },
@@ -133,14 +133,14 @@
             }
           ],
           "failureMessages": [
-            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"0x742d35Cc...b8c5e\"\u001b[39m\nReceived: \u001b[31m\"0x742d35Cc...\u001b[7m9\u001b[27mb8c5e\"\u001b[39m\n    at Object.toBe (/Users/wola/Documents/workspace/chengqi-ai-spa/tests/unit/formatwallet.spec.ts:30:22)\n    at Promise.finally.completed (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1556:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1496:10)\n    at _callCircusTest (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1006:40)\n    at _runTest (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:946:3)\n    at _runTestsForDescribeBlock (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:839:13)\n    at _runTestsForDescribeBlock (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:829:11)\n    at _runTestsForDescribeBlock (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:829:11)\n    at run (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:757:3)\n    at runAndTransformResultsToJestFormat (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1917:21)\n    at jestAdapter (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/runner.js:101:19)\n    at runTestInternal (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-runner/build/index.js:275:16)\n    at runTest (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-runner/build/index.js:343:7)"
+            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"0x742d35Cc...b8c5e\"\u001b[39m\nReceived: \u001b[31m\"0x742d35Cc...\u001b[7m9\u001b[27mb8c5e\"\u001b[39m\n    at Object.toBe (/Users/wola/Documents/workspace/chengqi-ai-spa/tests/unit/formatwallet.spec.ts:30:22)\n    at Promise.finally.completed (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1556:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1496:10)\n    at _callCircusTest (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1006:40)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at _runTest (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:946:3)\n    at _runTestsForDescribeBlock (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:839:13)\n    at _runTestsForDescribeBlock (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:829:11)\n    at _runTestsForDescribeBlock (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:829:11)\n    at run (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:757:3)\n    at runAndTransformResultsToJestFormat (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1917:21)\n    at jestAdapter (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/runner.js:101:19)\n    at runTestInternal (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-runner/build/index.js:275:16)\n    at runTest (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-runner/build/index.js:343:7)"
           ],
           "fullName": "formatWalletAddress 函数测试 自定义参数测试 应该支持同时自定义起始和结尾长度",
           "invocations": 1,
           "location": null,
           "numPassingAsserts": 0,
           "retryReasons": [],
-          "startAt": 1758711810083,
+          "startAt": 1758878815077,
           "status": "failed",
           "title": "应该支持同时自定义起始和结尾长度"
         },
@@ -149,7 +149,7 @@
             "formatWalletAddress 函数测试",
             "自定义参数测试"
           ],
-          "duration": 1,
+          "duration": 0,
           "failing": false,
           "failureDetails": [],
           "failureMessages": [],
@@ -158,7 +158,7 @@
           "location": null,
           "numPassingAsserts": 1,
           "retryReasons": [],
-          "startAt": 1758711810090,
+          "startAt": 1758878815085,
           "status": "passed",
           "title": "应该支持较大的起始和结尾长度"
         },
@@ -176,7 +176,7 @@
           "location": null,
           "numPassingAsserts": 1,
           "retryReasons": [],
-          "startAt": 1758711810091,
+          "startAt": 1758878815086,
           "status": "passed",
           "title": "空字符串应该返回空字符串"
         },
@@ -194,7 +194,7 @@
           "location": null,
           "numPassingAsserts": 2,
           "retryReasons": [],
-          "startAt": 1758711810091,
+          "startAt": 1758878815086,
           "status": "passed",
           "title": "null 或 undefined 应该返回空字符串"
         },
@@ -217,14 +217,14 @@
             }
           ],
           "failureMessages": [
-            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"0x1234567890\"\u001b[39m\nReceived: \u001b[31m\"0x123456\u001b[7m...\u001b[27m7890\"\u001b[39m\n    at Object.toBe (/Users/wola/Documents/workspace/chengqi-ai-spa/tests/unit/formatwallet.spec.ts:54:51)\n    at Promise.finally.completed (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1556:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1496:10)\n    at _callCircusTest (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1006:40)\n    at _runTest (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:946:3)\n    at _runTestsForDescribeBlock (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:839:13)\n    at _runTestsForDescribeBlock (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:829:11)\n    at _runTestsForDescribeBlock (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:829:11)\n    at run (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:757:3)\n    at runAndTransformResultsToJestFormat (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1917:21)\n    at jestAdapter (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/runner.js:101:19)\n    at runTestInternal (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-runner/build/index.js:275:16)\n    at runTest (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-runner/build/index.js:343:7)"
+            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"0x1234567890\"\u001b[39m\nReceived: \u001b[31m\"0x123456\u001b[7m...\u001b[27m7890\"\u001b[39m\n    at Object.toBe (/Users/wola/Documents/workspace/chengqi-ai-spa/tests/unit/formatwallet.spec.ts:54:51)\n    at Promise.finally.completed (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1556:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1496:10)\n    at _callCircusTest (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1006:40)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at _runTest (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:946:3)\n    at _runTestsForDescribeBlock (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:839:13)\n    at _runTestsForDescribeBlock (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:829:11)\n    at _runTestsForDescribeBlock (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:829:11)\n    at run (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:757:3)\n    at runAndTransformResultsToJestFormat (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1917:21)\n    at jestAdapter (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/runner.js:101:19)\n    at runTestInternal (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-runner/build/index.js:275:16)\n    at runTest (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-runner/build/index.js:343:7)"
           ],
           "fullName": "formatWalletAddress 函数测试 边界情况测试 地址长度小于等于 startLength + endLength 时应该返回原地址",
           "invocations": 1,
           "location": null,
           "numPassingAsserts": 2,
           "retryReasons": [],
-          "startAt": 1758711810091,
+          "startAt": 1758878815086,
           "status": "failed",
           "title": "地址长度小于等于 startLength + endLength 时应该返回原地址"
         },
@@ -233,7 +233,7 @@
             "formatWalletAddress 函数测试",
             "边界情况测试"
           ],
-          "duration": 0,
+          "duration": 1,
           "failing": false,
           "failureDetails": [],
           "failureMessages": [],
@@ -242,7 +242,7 @@
           "location": null,
           "numPassingAsserts": 1,
           "retryReasons": [],
-          "startAt": 1758711810093,
+          "startAt": 1758878815087,
           "status": "passed",
           "title": "刚好超过最小长度的地址应该被格式化"
         },
@@ -260,7 +260,7 @@
           "location": null,
           "numPassingAsserts": 2,
           "retryReasons": [],
-          "startAt": 1758711810093,
+          "startAt": 1758878815088,
           "status": "passed",
           "title": "应该保留原有的0x前缀"
         },
@@ -269,7 +269,7 @@
             "formatWalletAddress 函数测试",
             "前缀处理测试"
           ],
-          "duration": 0,
+          "duration": 1,
           "failing": false,
           "failureDetails": [],
           "failureMessages": [],
@@ -278,7 +278,7 @@
           "location": null,
           "numPassingAsserts": 2,
           "retryReasons": [],
-          "startAt": 1758711810094,
+          "startAt": 1758878815088,
           "status": "passed",
           "title": "没有0x前缀的地址不应该添加前缀"
         },
@@ -296,7 +296,7 @@
           "location": null,
           "numPassingAsserts": 1,
           "retryReasons": [],
-          "startAt": 1758711810094,
+          "startAt": 1758878815089,
           "status": "passed",
           "title": "应该正确处理大小写混合的地址"
         },
@@ -305,7 +305,7 @@
             "formatWalletAddress 函数测试",
             "特殊字符和格式测试"
           ],
-          "duration": 3,
+          "duration": 0,
           "failing": false,
           "failureDetails": [
             {
@@ -319,14 +319,14 @@
             }
           ],
           "failureMessages": [
-            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"0X742D\u001b[7m35\u001b[27m...8C5E\"\u001b[39m\nReceived: \u001b[31m\"0X742D...8C5E\"\u001b[39m\n    at Object.toBe (/Users/wola/Documents/workspace/chengqi-ai-spa/tests/unit/formatwallet.spec.ts:90:22)\n    at Promise.finally.completed (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1556:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1496:10)\n    at _callCircusTest (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1006:40)\n    at _runTest (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:946:3)\n    at _runTestsForDescribeBlock (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:839:13)\n    at _runTestsForDescribeBlock (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:829:11)\n    at _runTestsForDescribeBlock (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:829:11)\n    at run (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:757:3)\n    at runAndTransformResultsToJestFormat (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1917:21)\n    at jestAdapter (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/runner.js:101:19)\n    at runTestInternal (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-runner/build/index.js:275:16)\n    at runTest (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-runner/build/index.js:343:7)"
+            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"0X742D\u001b[7m35\u001b[27m...8C5E\"\u001b[39m\nReceived: \u001b[31m\"0X742D...8C5E\"\u001b[39m\n    at Object.toBe (/Users/wola/Documents/workspace/chengqi-ai-spa/tests/unit/formatwallet.spec.ts:90:22)\n    at Promise.finally.completed (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1556:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1496:10)\n    at _callCircusTest (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1006:40)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at _runTest (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:946:3)\n    at _runTestsForDescribeBlock (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:839:13)\n    at _runTestsForDescribeBlock (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:829:11)\n    at _runTestsForDescribeBlock (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:829:11)\n    at run (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:757:3)\n    at runAndTransformResultsToJestFormat (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1917:21)\n    at jestAdapter (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/runner.js:101:19)\n    at runTestInternal (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-runner/build/index.js:275:16)\n    at runTest (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-runner/build/index.js:343:7)"
           ],
           "fullName": "formatWalletAddress 函数测试 特殊字符和格式测试 应该正确处理全大写地址",
           "invocations": 1,
           "location": null,
           "numPassingAsserts": 0,
           "retryReasons": [],
-          "startAt": 1758711810094,
+          "startAt": 1758878815089,
           "status": "failed",
           "title": "应该正确处理全大写地址"
         },
@@ -344,7 +344,7 @@
           "location": null,
           "numPassingAsserts": 1,
           "retryReasons": [],
-          "startAt": 1758711810097,
+          "startAt": 1758878815090,
           "status": "passed",
           "title": "应该正确处理全小写地址"
         },
@@ -353,7 +353,7 @@
             "formatWalletAddress 函数测试",
             "参数验证测试"
           ],
-          "duration": 1,
+          "duration": 0,
           "failing": false,
           "failureDetails": [],
           "failureMessages": [],
@@ -362,7 +362,7 @@
           "location": null,
           "numPassingAsserts": 1,
           "retryReasons": [],
-          "startAt": 1758711810097,
+          "startAt": 1758878815091,
           "status": "passed",
           "title": "起始长度为0时应该正常工作"
         },
@@ -385,14 +385,14 @@
             }
           ],
           "failureMessages": [
-            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"0x742d35...\"\u001b[39m\nReceived: \u001b[31m\"0x742d35...\u001b[7m742d35Cc6634C0532925a3b8D45c7c8f8b9b8c5e\u001b[27m\"\u001b[39m\n    at Object.toBe (/Users/wola/Documents/workspace/chengqi-ai-spa/tests/unit/formatwallet.spec.ts:108:22)\n    at Promise.finally.completed (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1556:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1496:10)\n    at _callCircusTest (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1006:40)\n    at _runTest (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:946:3)\n    at _runTestsForDescribeBlock (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:839:13)\n    at _runTestsForDescribeBlock (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:829:11)\n    at _runTestsForDescribeBlock (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:829:11)\n    at run (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:757:3)\n    at runAndTransformResultsToJestFormat (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1917:21)\n    at jestAdapter (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/runner.js:101:19)\n    at runTestInternal (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-runner/build/index.js:275:16)\n    at runTest (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-runner/build/index.js:343:7)"
+            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"0x742d35...\"\u001b[39m\nReceived: \u001b[31m\"0x742d35...\u001b[7m742d35Cc6634C0532925a3b8D45c7c8f8b9b8c5e\u001b[27m\"\u001b[39m\n    at Object.toBe (/Users/wola/Documents/workspace/chengqi-ai-spa/tests/unit/formatwallet.spec.ts:108:22)\n    at Promise.finally.completed (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1556:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1496:10)\n    at _callCircusTest (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1006:40)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at _runTest (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:946:3)\n    at _runTestsForDescribeBlock (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:839:13)\n    at _runTestsForDescribeBlock (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:829:11)\n    at _runTestsForDescribeBlock (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:829:11)\n    at run (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:757:3)\n    at runAndTransformResultsToJestFormat (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1917:21)\n    at jestAdapter (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/runner.js:101:19)\n    at runTestInternal (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-runner/build/index.js:275:16)\n    at runTest (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-runner/build/index.js:343:7)"
           ],
           "fullName": "formatWalletAddress 函数测试 参数验证测试 结尾长度为0时应该正常工作",
           "invocations": 1,
           "location": null,
           "numPassingAsserts": 0,
           "retryReasons": [],
-          "startAt": 1758711810098,
+          "startAt": 1758878815091,
           "status": "failed",
           "title": "结尾长度为0时应该正常工作"
         },
@@ -401,7 +401,7 @@
             "formatWalletAddress 函数测试",
             "参数验证测试"
           ],
-          "duration": 1,
+          "duration": 0,
           "failing": false,
           "failureDetails": [
             {
@@ -415,14 +415,14 @@
             }
           ],
           "failureMessages": [
-            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"0x...\"\u001b[39m\nReceived: \u001b[31m\"0x...\u001b[7m742d35Cc6634C0532925a3b8D45c7c8f8b9b8c5e\u001b[27m\"\u001b[39m\n    at Object.toBe (/Users/wola/Documents/workspace/chengqi-ai-spa/tests/unit/formatwallet.spec.ts:113:22)\n    at Promise.finally.completed (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1556:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1496:10)\n    at _callCircusTest (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1006:40)\n    at _runTest (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:946:3)\n    at _runTestsForDescribeBlock (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:839:13)\n    at _runTestsForDescribeBlock (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:829:11)\n    at _runTestsForDescribeBlock (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:829:11)\n    at run (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:757:3)\n    at runAndTransformResultsToJestFormat (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1917:21)\n    at jestAdapter (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/runner.js:101:19)\n    at runTestInternal (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-runner/build/index.js:275:16)\n    at runTest (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-runner/build/index.js:343:7)"
+            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"0x...\"\u001b[39m\nReceived: \u001b[31m\"0x...\u001b[7m742d35Cc6634C0532925a3b8D45c7c8f8b9b8c5e\u001b[27m\"\u001b[39m\n    at Object.toBe (/Users/wola/Documents/workspace/chengqi-ai-spa/tests/unit/formatwallet.spec.ts:113:22)\n    at Promise.finally.completed (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1556:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1496:10)\n    at _callCircusTest (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1006:40)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at _runTest (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:946:3)\n    at _runTestsForDescribeBlock (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:839:13)\n    at _runTestsForDescribeBlock (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:829:11)\n    at _runTestsForDescribeBlock (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:829:11)\n    at run (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:757:3)\n    at runAndTransformResultsToJestFormat (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1917:21)\n    at jestAdapter (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/runner.js:101:19)\n    at runTestInternal (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-runner/build/index.js:275:16)\n    at runTest (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-runner/build/index.js:343:7)"
           ],
           "fullName": "formatWalletAddress 函数测试 参数验证测试 起始和结尾长度都为0时应该只显示前缀和省略号",
           "invocations": 1,
           "location": null,
           "numPassingAsserts": 0,
           "retryReasons": [],
-          "startAt": 1758711810098,
+          "startAt": 1758878815092,
           "status": "failed",
           "title": "起始和结尾长度都为0时应该只显示前缀和省略号"
         },
@@ -445,14 +445,14 @@
             }
           ],
           "failureMessages": [
-            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"0x...8c5e\"\u001b[39m\nReceived: \u001b[31m\"0x\u001b[7m742d35Cc6634C0532925a3b8D45c7c8f8b9b8c5\u001b[27m...8c5e\"\u001b[39m\n    at Object.toBe (/Users/wola/Documents/workspace/chengqi-ai-spa/tests/unit/formatwallet.spec.ts:120:23)\n    at Promise.finally.completed (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1556:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1496:10)\n    at _callCircusTest (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1006:40)\n    at _runTest (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:946:3)\n    at _runTestsForDescribeBlock (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:839:13)\n    at _runTestsForDescribeBlock (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:829:11)\n    at _runTestsForDescribeBlock (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:829:11)\n    at run (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:757:3)\n    at runAndTransformResultsToJestFormat (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1917:21)\n    at jestAdapter (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/runner.js:101:19)\n    at runTestInternal (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-runner/build/index.js:275:16)\n    at runTest (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-runner/build/index.js:343:7)"
+            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"0x...8c5e\"\u001b[39m\nReceived: \u001b[31m\"0x\u001b[7m742d35Cc6634C0532925a3b8D45c7c8f8b9b8c5\u001b[27m...8c5e\"\u001b[39m\n    at Object.toBe (/Users/wola/Documents/workspace/chengqi-ai-spa/tests/unit/formatwallet.spec.ts:120:23)\n    at Promise.finally.completed (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1556:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1496:10)\n    at _callCircusTest (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1006:40)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at _runTest (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:946:3)\n    at _runTestsForDescribeBlock (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:839:13)\n    at _runTestsForDescribeBlock (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:829:11)\n    at _runTestsForDescribeBlock (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:829:11)\n    at run (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:757:3)\n    at runAndTransformResultsToJestFormat (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/jestAdapterInit.js:1917:21)\n    at jestAdapter (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-circus/build/runner.js:101:19)\n    at runTestInternal (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-runner/build/index.js:275:16)\n    at runTest (/Users/wola/Documents/workspace/chengqi-ai-spa/node_modules/jest-runner/build/index.js:343:7)"
           ],
           "fullName": "formatWalletAddress 函数测试 参数验证测试 负数参数应该被处理为0",
           "invocations": 1,
           "location": null,
           "numPassingAsserts": 0,
           "retryReasons": [],
-          "startAt": 1758711810099,
+          "startAt": 1758878815093,
           "status": "failed",
           "title": "负数参数应该被处理为0"
         },
@@ -470,7 +470,7 @@
           "location": null,
           "numPassingAsserts": 1,
           "retryReasons": [],
-          "startAt": 1758711810100,
+          "startAt": 1758878815093,
           "status": "passed",
           "title": "应该能处理非常长的地址字符串"
         },
@@ -479,7 +479,7 @@
             "formatWalletAddress 函数测试",
             "性能和压力测试"
           ],
-          "duration": 0,
+          "duration": 1,
           "failing": false,
           "failureDetails": [],
           "failureMessages": [],
@@ -488,7 +488,7 @@
           "location": null,
           "numPassingAsserts": 1,
           "retryReasons": [],
-          "startAt": 1758711810100,
+          "startAt": 1758878815093,
           "status": "passed",
           "title": "应该能批量处理多个地址"
         }
