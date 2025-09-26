@@ -1,7 +1,7 @@
 import { atom, useAtomValue } from 'jotai'
 import { useEffect } from 'react'
 import { useImmer } from '@hooks/useImmer'
-import * as styles from './style.module.css'
+import './style.module.css'
 
 const countAtom = atom(0)
 
@@ -60,7 +60,7 @@ const Index = () => {
       >
         更新数据
       </button>
-      <div className={`${styles.element} ${styles.animated} `}></div>
+      <div className={`element animated`}></div>
     </div>
   )
 }

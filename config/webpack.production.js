@@ -25,7 +25,7 @@ module.exports = {
         parallel: true, // 开启多线程
       }),
       new TerserPlugin({
-        parallele: true,
+        parallel: true,
       }),
     ],
   },
