@@ -1,0 +1,60 @@
+{
+  // 指定配置文件的 JSON Schema，便于编辑器校验
+  "$schema": "https://json.schemastore.org/swcrc",
+  "jsc": {
+    "parser": {
+      // 语法类型：typescript 表示支持 TypeScript 语法
+      "syntax": "typescript",
+      // 支持 .tsx 文件（React TSX 语法）
+      "tsx": true,
+      // 支持装饰器语法（@decorator）
+      "decorators": true,
+      // 支持动态 import()
+      "dynamicImport": true
+    },
+    "transform": {
+      // 启用旧版装饰器语法支持
+      "legacyDecorator": true,
+      // 生成装饰器元数据（通常用于依赖注入等场景）
+      "decoratorMetadata": true,
+      "react": {
+        // React 运行时：automatic 表示自动引入 jsx 运行时
+        "runtime": "automatic",
+        // 启用 React Fast Refresh 热更新
+        "refresh": true,
+        // 是否为开发模式（false 表示生产模式）
+        "development": false,
+        // 自定义 JSX 转换函数（通常无需修改）
+        "pragma": "React.createElement",
+        // 自定义 Fragment 转换函数（通常无需修改）
+        "pragmaFrag": "React.Fragment"
+      }
+    },
+    // 输出目标 JS 版本，这里为 ES2022
+    "target": "es2022",
+    // 宽松模式，生成更简洁的代码
+    "loose": true,
+    // 使用外部辅助函数，减少重复代码
+    "externalHelpers": true,
+    // 保留类名，便于调试和反射
+    "keepClassNames": true
+  },
+  "module": {
+    // 模块类型：es6 表示使用 ES Module
+    "type": "es6",
+    // 严格模式导出
+    "strict": true,
+    // 是否启用严格模式（'use strict'）
+    "strictMode": true,
+    // 懒加载模块，按需加载
+    "lazy": true,
+    // 是否禁用模块间的 interop 处理（false 表示启用）
+    "noInterop": false
+  },
+  // 是否压缩输出代码
+  "minify": true,
+  // 是否生成 source map 便于调试
+  "sourceMaps": true,
+  // 排除不需要编译的目录
+  "exclude": ["node_modules", ".git", "dist"]
+}

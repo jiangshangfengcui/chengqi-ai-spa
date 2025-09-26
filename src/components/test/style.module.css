@@ -1,0 +1,16 @@
+/* 输入 CSS */
+.element {
+  transform: translate(100px, 50px) rotate(45deg) scale(1.5);
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+
+.animated {
+  transform: translateX(20px) skew(10deg, 5deg);
+  transition: transform 0.3s ease;
+}
+
+.complex {
+  transform: perspective(500px) rotateY(45deg) translateZ(100px);
+}

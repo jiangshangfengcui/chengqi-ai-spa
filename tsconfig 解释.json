@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    // 指定 ECMAScript 目标版本，这里为 ES5
+    "target": "es5",
+    // 指定要包含在编译中的库文件
+    "lib": ["dom", "dom.iterable", "esnext"],
+    // 允许编译 JS 文件
+    "allowJs": true,
+    // 跳过库文件的类型检查，加快编译速度
+    "skipLibCheck": true,
+    // 允许默认导入非 ESModule 模块
+    "esModuleInterop": true,
+    // 允许从没有默认导出的模块默认导入
+    "allowSyntheticDefaultImports": true,
+    // 启用所有严格类型检查选项
+    "strict": true,
+    // 强制文件名大小写一致
+    "forceConsistentCasingInFileNames": true,
+    // 指定模块代码生成方式，这里为 ESNext
+    "module": "esnext",
+    // 指定模块解析策略，这里为 node 方式
+    "moduleResolution": "node",
+    // 允许导入 JSON 模块
+    "resolveJsonModule": true,
+    // 每个文件作为单独的模块，适用于 Babel/SWC 等工具链
+    "isolatedModules": true,
+    // 不生成输出文件（只做类型检查）
+    "noEmit": true,
+    // 启用 React 17+ 新的 JSX 转换
+    "jsx": "react-jsx",
+    // 指定项目根目录
+    "rootDir": ".",
+    // 基础路径，用于解析非相对模块
+    "baseUrl": ".",
+    // 路径别名映射，便于模块导入
+    "paths": {
+      "@/*": ["src/*"], // @/xxx => src/xxx
+      "@layouts/*": ["src/layouts/*"],
+      "@routes/*": ["src/routes/*"],
+      "@pages/*": ["src/pages/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@utils/*": ["src/utils/*"],
+      "@components/*": ["src/components/*"],
+      "@abis/*": ["src/abis/*"],
+      "@connections/*": ["src/connections/*"]
+    }
+  },
+
+  // 指定要包含在编译中的文件夹
+  "include": ["src", "tests"]
+}
