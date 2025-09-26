@@ -1,0 +1,4 @@
+echo "🚀 Pre-commit hook is running..."
+
+yarn lint
+yarn test

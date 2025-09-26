@@ -89,7 +89,7 @@
                 <canvas id="test-suites-canvas" width="100" height="100"></canvas>
                 <h2>Test Suites</h2>
                 <div class="list-group">
-                    <p id="test-suites-results" class="list-group-item list-group-item-action">0 passed, 1 total</p>
+                    <p id="test-suites-results" class="list-group-item list-group-item-action">1 passed, 1 total</p>
                 </div>
             </div>
             <!-- /.col-lg-4 -->
@@ -97,7 +97,7 @@
                 <canvas id="tests-canvas" width="100" height="100"></canvas>
                 <h2>Tests</h2>
                 <div class="list-group">
-                    <p id="tests-results" class="list-group-item list-group-item-action">0 passed, 0 total</p>
+                    <p id="tests-results" class="list-group-item list-group-item-action">28 passed, 28 total</p>
                 </div>
             </div>
             <!-- /.col-lg-4 -->
@@ -119,7 +119,6 @@
         <div class="d-none" id="test-summary"></div>
         <div class="d-none" id="test-config">{
   &quot;additionalResultsProcessors&quot;: [],
-  &quot;log&quot;: false,
   &quot;resultDir&quot;: &quot;docs&#x2F;jest-stare&#x2F;&quot;,
   &quot;coverageLink&quot;: &quot;..&#x2F;jest-coverage&#x2F;lcov-report&#x2F;index.html&quot;,
   &quot;resultHtml&quot;: &quot;index.html&quot;,
@@ -129,14 +128,14 @@
             <div class="d-none" id="test-results">{
   &quot;numFailedTestSuites&quot;: 0,
   &quot;numFailedTests&quot;: 0,
-  &quot;numPassedTestSuites&quot;: 0,
-  &quot;numPassedTests&quot;: 0,
+  &quot;numPassedTestSuites&quot;: 1,
+  &quot;numPassedTests&quot;: 28,
   &quot;numPendingTestSuites&quot;: 0,
   &quot;numPendingTests&quot;: 0,
   &quot;numRuntimeErrorTestSuites&quot;: 0,
   &quot;numTodoTests&quot;: 0,
   &quot;numTotalTestSuites&quot;: 1,
-  &quot;numTotalTests&quot;: 0,
+  &quot;numTotalTests&quot;: 28,
   &quot;openHandles&quot;: [],
   &quot;snapshot&quot;: {
     &quot;added&quot;: 0,
@@ -154,9 +153,548 @@
     &quot;unmatched&quot;: 0,
     &quot;updated&quot;: 0
   },
-  &quot;startTime&quot;: 1758793104970,
+  &quot;startTime&quot;: 1758894874508,
   &quot;success&quot;: false,
-  &quot;testResults&quot;: [],
+  &quot;testResults&quot;: [
+    {
+      &quot;leaks&quot;: false,
+      &quot;numFailingTests&quot;: 0,
+      &quot;numPassingTests&quot;: 28,
+      &quot;numPendingTests&quot;: 0,
+      &quot;numTodoTests&quot;: 0,
+      &quot;openHandles&quot;: [],
+      &quot;perfStats&quot;: {
+        &quot;end&quot;: 1758894874696,
+        &quot;loadTestEnvironmentEnd&quot;: 1758894874576,
+        &quot;loadTestEnvironmentStart&quot;: 1758894874545,
+        &quot;runtime&quot;: 120,
+        &quot;setupAfterEnvEnd&quot;: 1758894874660,
+        &quot;setupAfterEnvStart&quot;: 1758894874659,
+        &quot;setupFilesEnd&quot;: 1758894874576,
+        &quot;setupFilesStart&quot;: 1758894874576,
+        &quot;slow&quot;: false,
+        &quot;start&quot;: 1758894874576
+      },
+      &quot;skipped&quot;: false,
+      &quot;snapshot&quot;: {
+        &quot;added&quot;: 0,
+        &quot;fileDeleted&quot;: false,
+        &quot;matched&quot;: 0,
+        &quot;unchecked&quot;: 0,
+        &quot;uncheckedKeys&quot;: [],
+        &quot;unmatched&quot;: 0,
+        &quot;updated&quot;: 0
+      },
+      &quot;testFilePath&quot;: &quot;&#x2F;Users&#x2F;wola&#x2F;Documents&#x2F;workspace&#x2F;chengqi-ai-spa&#x2F;tests&#x2F;unit&#x2F;formatwallet.spec.ts&quot;,
+      &quot;testResults&quot;: [
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;formatWalletAddress&quot;,
+            &quot;基础功能测试&quot;
+          ],
+          &quot;duration&quot;: 4,
+          &quot;failing&quot;: false,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;formatWalletAddress 基础功能测试 应该正确格式化标准的以太坊地址&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 1,
+          &quot;retryReasons&quot;: [],
+          &quot;startAt&quot;: 1758894874670,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;应该正确格式化标准的以太坊地址&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;formatWalletAddress&quot;,
+            &quot;基础功能测试&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failing&quot;: false,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;formatWalletAddress 基础功能测试 应该正确格式化不带0x前缀的地址&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 1,
+          &quot;retryReasons&quot;: [],
+          &quot;startAt&quot;: 1758894874675,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;应该正确格式化不带0x前缀的地址&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;formatWalletAddress&quot;,
+            &quot;基础功能测试&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failing&quot;: false,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;formatWalletAddress 基础功能测试 应该使用自定义的起始和结束长度&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 1,
+          &quot;retryReasons&quot;: [],
+          &quot;startAt&quot;: 1758894874675,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;应该使用自定义的起始和结束长度&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;formatWalletAddress&quot;,
+            &quot;边界条件测试&quot;
+          ],
+          &quot;duration&quot;: 2,
+          &quot;failing&quot;: false,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;formatWalletAddress 边界条件测试 应该返回空字符串当地址为空&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 3,
+          &quot;retryReasons&quot;: [],
+          &quot;startAt&quot;: 1758894874676,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;应该返回空字符串当地址为空&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;formatWalletAddress&quot;,
+            &quot;边界条件测试&quot;
+          ],
+          &quot;duration&quot;: 1,
+          &quot;failing&quot;: false,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;formatWalletAddress 边界条件测试 应该返回原地址当地址长度小于或等于格式化长度总和&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 3,
+          &quot;retryReasons&quot;: [],
+          &quot;startAt&quot;: 1758894874678,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;应该返回原地址当地址长度小于或等于格式化长度总和&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;formatWalletAddress&quot;,
+            &quot;边界条件测试&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failing&quot;: false,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;formatWalletAddress 边界条件测试 应该格式化地址当长度大于格式化长度总和&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 2,
+          &quot;retryReasons&quot;: [],
+          &quot;startAt&quot;: 1758894874679,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;应该格式化地址当长度大于格式化长度总和&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;formatWalletAddress&quot;,
+            &quot;边界条件测试&quot;
+          ],
+          &quot;duration&quot;: 1,
+          &quot;failing&quot;: false,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;formatWalletAddress 边界条件测试 应该正确处理边界长度的地址&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 2,
+          &quot;retryReasons&quot;: [],
+          &quot;startAt&quot;: 1758894874679,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;应该正确处理边界长度的地址&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;formatWalletAddress&quot;,
+            &quot;边界条件测试&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failing&quot;: false,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;formatWalletAddress 边界条件测试 应该正确处理自定义长度参数的边界情况&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 5,
+          &quot;retryReasons&quot;: [],
+          &quot;startAt&quot;: 1758894874680,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;应该正确处理自定义长度参数的边界情况&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;formatWalletAddress&quot;,
+            &quot;0x前缀处理测试&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failing&quot;: false,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;formatWalletAddress 0x前缀处理测试 应该保留0x前缀当原地址有前缀时&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 2,
+          &quot;retryReasons&quot;: [],
+          &quot;startAt&quot;: 1758894874681,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;应该保留0x前缀当原地址有前缀时&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;formatWalletAddress&quot;,
+            &quot;0x前缀处理测试&quot;
+          ],
+          &quot;duration&quot;: 1,
+          &quot;failing&quot;: false,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;formatWalletAddress 0x前缀处理测试 应该不添加0x前缀当原地址没有前缀时&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 2,
+          &quot;retryReasons&quot;: [],
+          &quot;startAt&quot;: 1758894874681,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;应该不添加0x前缀当原地址没有前缀时&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;formatWalletAddress&quot;,
+            &quot;0x前缀处理测试&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failing&quot;: false,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;formatWalletAddress 0x前缀处理测试 应该正确处理只有0x前缀的情况&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 1,
+          &quot;retryReasons&quot;: [],
+          &quot;startAt&quot;: 1758894874682,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;应该正确处理只有0x前缀的情况&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;formatWalletAddress&quot;,
+            &quot;0x前缀处理测试&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failing&quot;: false,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;formatWalletAddress 0x前缀处理测试 应该正确计算带0x前缀地址的长度&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 2,
+          &quot;retryReasons&quot;: [],
+          &quot;startAt&quot;: 1758894874682,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;应该正确计算带0x前缀地址的长度&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;formatWalletAddress&quot;,
+            &quot;参数验证测试&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failing&quot;: false,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;formatWalletAddress 参数验证测试 应该使用默认参数值&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 2,
+          &quot;retryReasons&quot;: [],
+          &quot;startAt&quot;: 1758894874682,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;应该使用默认参数值&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;formatWalletAddress&quot;,
+            &quot;参数验证测试&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failing&quot;: false,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;formatWalletAddress 参数验证测试 应该正确处理startLength为0的情况&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 1,
+          &quot;retryReasons&quot;: [],
+          &quot;startAt&quot;: 1758894874683,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;应该正确处理startLength为0的情况&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;formatWalletAddress&quot;,
+            &quot;参数验证测试&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failing&quot;: false,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;formatWalletAddress 参数验证测试 应该正确处理endLength为0的情况&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 1,
+          &quot;retryReasons&quot;: [],
+          &quot;startAt&quot;: 1758894874683,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;应该正确处理endLength为0的情况&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;formatWalletAddress&quot;,
+            &quot;参数验证测试&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failing&quot;: false,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;formatWalletAddress 参数验证测试 应该正确处理两个长度都为0的情况&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 1,
+          &quot;retryReasons&quot;: [],
+          &quot;startAt&quot;: 1758894874683,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;应该正确处理两个长度都为0的情况&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;formatWalletAddress&quot;,
+            &quot;参数验证测试&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failing&quot;: false,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;formatWalletAddress 参数验证测试 应该正确处理endLength为正数的情况&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 2,
+          &quot;retryReasons&quot;: [],
+          &quot;startAt&quot;: 1758894874684,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;应该正确处理endLength为正数的情况&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;formatWalletAddress&quot;,
+            &quot;实际以太坊地址测试&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failing&quot;: false,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;formatWalletAddress 实际以太坊地址测试 应该正确格式化真实的以太坊地址&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 2,
+          &quot;retryReasons&quot;: [],
+          &quot;startAt&quot;: 1758894874684,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;应该正确格式化真实的以太坊地址&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;formatWalletAddress&quot;,
+            &quot;实际以太坊地址测试&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failing&quot;: false,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;formatWalletAddress 实际以太坊地址测试 应该正确处理不同大小写的地址&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 3,
+          &quot;retryReasons&quot;: [],
+          &quot;startAt&quot;: 1758894874685,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;应该正确处理不同大小写的地址&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;formatWalletAddress&quot;,
+            &quot;特殊情况测试&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failing&quot;: false,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;formatWalletAddress 特殊情况测试 应该处理非标准长度的地址&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 3,
+          &quot;retryReasons&quot;: [],
+          &quot;startAt&quot;: 1758894874685,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;应该处理非标准长度的地址&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;formatWalletAddress&quot;,
+            &quot;特殊情况测试&quot;
+          ],
+          &quot;duration&quot;: 1,
+          &quot;failing&quot;: false,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;formatWalletAddress 特殊情况测试 应该处理地址去掉0x前缀后的截取&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 2,
+          &quot;retryReasons&quot;: [],
+          &quot;startAt&quot;: 1758894874685,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;应该处理地址去掉0x前缀后的截取&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;formatWalletAddress&quot;,
+            &quot;特殊情况测试&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failing&quot;: false,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;formatWalletAddress 特殊情况测试 应该验证slice行为&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 4,
+          &quot;retryReasons&quot;: [],
+          &quot;startAt&quot;: 1758894874686,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;应该验证slice行为&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;formatWalletAddress&quot;,
+            &quot;覆盖率补充测试&quot;
+          ],
+          &quot;duration&quot;: 1,
+          &quot;failing&quot;: false,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;formatWalletAddress 覆盖率补充测试 应该覆盖所有分支&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 10,
+          &quot;retryReasons&quot;: [],
+          &quot;startAt&quot;: 1758894874686,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;应该覆盖所有分支&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;formatWalletAddress&quot;,
+            &quot;覆盖率补充测试&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failing&quot;: false,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;formatWalletAddress 覆盖率补充测试 应该正确处理slice的边界&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 3,
+          &quot;retryReasons&quot;: [],
+          &quot;startAt&quot;: 1758894874687,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;应该正确处理slice的边界&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;formatWalletAddress&quot;,
+            &quot;覆盖率补充测试&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failing&quot;: false,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;formatWalletAddress 覆盖率补充测试 应该详细验证slice行为&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 5,
+          &quot;retryReasons&quot;: [],
+          &quot;startAt&quot;: 1758894874687,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;应该详细验证slice行为&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;formatWalletAddress&quot;,
+            &quot;性能测试&quot;
+          ],
+          &quot;duration&quot;: 6,
+          &quot;failing&quot;: false,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;formatWalletAddress 性能测试 应该高效处理大量调用&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 1,
+          &quot;retryReasons&quot;: [],
+          &quot;startAt&quot;: 1758894874687,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;应该高效处理大量调用&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;formatWalletAddress&quot;,
+            &quot;实际使用场景&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failing&quot;: false,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;formatWalletAddress 实际使用场景 应该适合在UI中显示&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 3,
+          &quot;retryReasons&quot;: [],
+          &quot;startAt&quot;: 1758894874694,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;应该适合在UI中显示&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;formatWalletAddress&quot;,
+            &quot;实际使用场景&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failing&quot;: false,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;formatWalletAddress 实际使用场景 应该处理各种真实场景&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 3,
+          &quot;retryReasons&quot;: [],
+          &quot;startAt&quot;: 1758894874694,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;应该处理各种真实场景&quot;
+        }
+      ],
+      &quot;failureMessage&quot;: null
+    }
+  ],
   &quot;wasInterrupted&quot;: false
 }</div>
         </div>
@@ -164,12 +702,13 @@
   &quot;bail&quot;: 0,
   &quot;changedFilesWithAncestor&quot;: false,
   &quot;ci&quot;: false,
-  &quot;collectCoverage&quot;: false,
+  &quot;collectCoverage&quot;: true,
   &quot;collectCoverageFrom&quot;: [],
   &quot;coverageDirectory&quot;: &quot;&#x2F;Users&#x2F;wola&#x2F;Documents&#x2F;workspace&#x2F;chengqi-ai-spa&#x2F;docs&#x2F;jest-coverage&quot;,
   &quot;coverageProvider&quot;: &quot;babel&quot;,
   &quot;coverageReporters&quot;: [
     &quot;json&quot;,
+    &quot;text&quot;,
     &quot;lcov&quot;,
     &quot;clover&quot;
   ],
@@ -187,12 +726,12 @@
   &quot;expand&quot;: false,
   &quot;findRelatedTests&quot;: false,
   &quot;forceExit&quot;: false,
-  &quot;json&quot;: true,
+  &quot;json&quot;: false,
   &quot;lastCommit&quot;: false,
   &quot;listTests&quot;: false,
   &quot;logHeapUsage&quot;: false,
   &quot;maxConcurrency&quot;: 5,
-  &quot;maxWorkers&quot;: 6,
+  &quot;maxWorkers&quot;: 11,
   &quot;noStackTrace&quot;: false,
   &quot;nonFlagArgs&quot;: [
     &quot;tests&#x2F;unit&quot;
@@ -202,8 +741,7 @@
   &quot;onlyChanged&quot;: false,
   &quot;onlyFailures&quot;: false,
   &quot;openHandlesTimeout&quot;: 1000,
-  &quot;outputFile&quot;: &quot;&#x2F;var&#x2F;folders&#x2F;0h&#x2F;vlcxxhvn73z975xpsjb7wtz80000gn&#x2F;T&#x2F;jest_runner_chengqi_ai_spa_501.json&quot;,
-  &quot;passWithNoTests&quot;: true,
+  &quot;passWithNoTests&quot;: false,
   &quot;projects&quot;: [],
   &quot;reporters&quot;: [
     [
@@ -213,20 +751,12 @@
     [
       &quot;&#x2F;Users&#x2F;wola&#x2F;Documents&#x2F;workspace&#x2F;chengqi-ai-spa&#x2F;node_modules&#x2F;jest-stare&#x2F;lib&#x2F;index.js&quot;,
       {}
-    ],
-    [
-      &quot;default&quot;,
-      {}
-    ],
-    [
-      &quot;&#x2F;Users&#x2F;wola&#x2F;.vscode&#x2F;extensions&#x2F;orta.vscode-jest-6.4.4&#x2F;out&#x2F;reporter.js&quot;,
-      {}
     ]
   ],
   &quot;rootDir&quot;: &quot;&#x2F;Users&#x2F;wola&#x2F;Documents&#x2F;workspace&#x2F;chengqi-ai-spa&quot;,
   &quot;runInBand&quot;: false,
   &quot;runTestsByPath&quot;: false,
-  &quot;seed&quot;: -1653866592,
+  &quot;seed&quot;: -105583550,
   &quot;skipFilter&quot;: false,
   &quot;snapshotFormat&quot;: {
     &quot;escapeString&quot;: false,
@@ -241,10 +771,10 @@
   },
   &quot;testSequencer&quot;: &quot;&#x2F;Users&#x2F;wola&#x2F;Documents&#x2F;workspace&#x2F;chengqi-ai-spa&#x2F;node_modules&#x2F;@jest&#x2F;test-sequencer&#x2F;build&#x2F;index.js&quot;,
   &quot;updateSnapshot&quot;: &quot;new&quot;,
-  &quot;useStderr&quot;: true,
+  &quot;useStderr&quot;: false,
   &quot;verbose&quot;: true,
   &quot;waitForUnhandledRejections&quot;: false,
-  &quot;watch&quot;: true,
+  &quot;watch&quot;: false,
   &quot;watchAll&quot;: false,
   &quot;watchman&quot;: true,
   &quot;workerThreads&quot;: false

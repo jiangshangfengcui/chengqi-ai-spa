@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1758879775383" clover="3.2.0">
-  <project timestamp="1758879775383" name="All files">
-    <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0" elements="0" coveredelements="0" complexity="0" loc="0" ncloc="0" packages="0" files="0" classes="0"/>
+<coverage generated="1758894874755" clover="3.2.0">
+  <project timestamp="1758894874755" name="All files">
+    <metrics statements="1" coveredstatements="1" conditionals="10" coveredconditionals="10" methods="2" coveredmethods="2" elements="13" coveredelements="13" complexity="0" loc="1" ncloc="1" packages="1" files="1" classes="1"/>
+    <file name="index.ts" path="/Users/wola/Documents/workspace/chengqi-ai-spa/src/utils/index.ts">
+      <metrics statements="1" coveredstatements="1" conditionals="10" coveredconditionals="10" methods="2" coveredmethods="2"/>
+      <line num="1" count="10061" type="cond" truecount="10" falsecount="0"/>
+    </file>
   </project>
 </coverage>

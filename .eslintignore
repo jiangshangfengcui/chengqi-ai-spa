@@ -14,3 +14,4 @@ cypress.config.js
 tailwind.config.js
 cypress.config.ts
 loaders/
+demo/

@@ -11,7 +11,7 @@
     "test:uidiff": "backstop test",
     "test:e2e": "npx cypress open",
     "test:unit": "scripty",
-    "test://": "jest tests/unit --collectCoverage --reporters default jest-stare",
+    "test": "jest tests/unit --collectCoverage --reporters default jest-stare",
     "lint:fix": "tsc --noEmit & eslint ./src --ext .ts,.tsx,.js --fix",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:staged": "npx @biomejs/biome check --write ./src",
