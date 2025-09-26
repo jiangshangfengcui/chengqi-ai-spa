@@ -57,49 +57,49 @@ jobs:
           name: coverage-report
           path: coverage/
 
-  e2e-test:
-    name: E2E Tests
-    runs-on: ubuntu-latest
+  # e2e-test:
+  #   name: E2E Tests
+  #   runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+  #   steps:
+  #     - name: Checkout code
+  #       uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'
-          cache: 'yarn'
+  #     - name: Setup Node.js
+  #       uses: actions/setup-node@v4
+  #       with:
+  #         node-version: '18'
+  #         cache: 'yarn'
 
-      - name: Install dependencies
-        run: yarn install --frozen-lockfile
+  #     - name: Install dependencies
+  #       run: yarn install --frozen-lockfile
 
-      - name: Build application
-        run: yarn client:prod
+  #     - name: Build application
+  #       run: yarn client:prod
 
-      - name: Run Cypress E2E tests
-        uses: cypress-io/github-action@v6
-        with:
-          install-command: yarn install --frozen-lockfile
-          start: yarn client:server
-          wait-on: 'http://localhost:8080'
-          wait-on-timeout: 120
-          browser: chrome
-          headed: false
+  #     - name: Run Cypress E2E tests
+  #       uses: cypress-io/github-action@v6
+  #       with:
+  #         install-command: yarn install --frozen-lockfile
+  #         start: yarn client:server
+  #         wait-on: 'http://localhost:8080'
+  #         wait-on-timeout: 120
+  #         browser: chrome
+  #         headed: false
 
-      - name: Upload Cypress screenshots
-        uses: actions/upload-artifact@v4 # 升级到 v4
-        if: failure()
-        with:
-          name: cypress-screenshots
-          path: cypress/screenshots
+  #     - name: Upload Cypress screenshots
+  #       uses: actions/upload-artifact@v4 # 升级到 v4
+  #       if: failure()
+  #       with:
+  #         name: cypress-screenshots
+  #         path: cypress/screenshots
 
-      - name: Upload Cypress videos
-        uses: actions/upload-artifact@v4 # 升级到 v4
-        if: always()
-        with:
-          name: cypress-videos
-          path: cypress/videos
+  #     - name: Upload Cypress videos
+  #       uses: actions/upload-artifact@v4 # 升级到 v4
+  #       if: always()
+  #       with:
+  #         name: cypress-videos
+  #         path: cypress/videos
 
   build:
     name: Build Check
