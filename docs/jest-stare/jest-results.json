@@ -26,7 +26,7 @@
     "unmatched": 0,
     "updated": 0
   },
-  "startTime": 1758894911799,
+  "startTime": 1758895524252,
   "success": false,
   "testResults": [
     {
@@ -37,16 +37,16 @@
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1758894911980,
-        "loadTestEnvironmentEnd": 1758894911865,
-        "loadTestEnvironmentStart": 1758894911834,
-        "runtime": 114,
-        "setupAfterEnvEnd": 1758894911951,
-        "setupAfterEnvStart": 1758894911950,
-        "setupFilesEnd": 1758894911866,
-        "setupFilesStart": 1758894911866,
+        "end": 1758895524443,
+        "loadTestEnvironmentEnd": 1758895524325,
+        "loadTestEnvironmentStart": 1758895524290,
+        "runtime": 118,
+        "setupAfterEnvEnd": 1758895524415,
+        "setupAfterEnvStart": 1758895524413,
+        "setupFilesEnd": 1758895524325,
+        "setupFilesStart": 1758895524325,
         "slow": false,
-        "start": 1758894911866
+        "start": 1758895524325
       },
       "skipped": false,
       "snapshot": {
@@ -74,7 +74,7 @@
           "location": null,
           "numPassingAsserts": 1,
           "retryReasons": [],
-          "startAt": 1758894911954,
+          "startAt": 1758895524418,
           "status": "passed",
           "title": "应该正确格式化标准的以太坊地址"
         },
@@ -83,7 +83,7 @@
             "formatWalletAddress",
             "基础功能测试"
           ],
-          "duration": 0,
+          "duration": 1,
           "failing": false,
           "failureDetails": [],
           "failureMessages": [],
@@ -92,7 +92,7 @@
           "location": null,
           "numPassingAsserts": 1,
           "retryReasons": [],
-          "startAt": 1758894911959,
+          "startAt": 1758895524422,
           "status": "passed",
           "title": "应该正确格式化不带0x前缀的地址"
         },
@@ -101,7 +101,7 @@
             "formatWalletAddress",
             "基础功能测试"
           ],
-          "duration": 1,
+          "duration": 0,
           "failing": false,
           "failureDetails": [],
           "failureMessages": [],
@@ -110,9 +110,27 @@
           "location": null,
           "numPassingAsserts": 1,
           "retryReasons": [],
-          "startAt": 1758894911959,
+          "startAt": 1758895524423,
           "status": "passed",
           "title": "应该使用自定义的起始和结束长度"
+        },
+        {
+          "ancestorTitles": [
+            "formatWalletAddress",
+            "边界条件测试"
+          ],
+          "duration": 3,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "formatWalletAddress 边界条件测试 应该返回空字符串当地址为空",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 3,
+          "retryReasons": [],
+          "startAt": 1758895524423,
+          "status": "passed",
+          "title": "应该返回空字符串当地址为空"
         },
         {
           "ancestorTitles": [
@@ -123,30 +141,12 @@
           "failing": false,
           "failureDetails": [],
           "failureMessages": [],
-          "fullName": "formatWalletAddress 边界条件测试 应该返回空字符串当地址为空",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 3,
-          "retryReasons": [],
-          "startAt": 1758894911960,
-          "status": "passed",
-          "title": "应该返回空字符串当地址为空"
-        },
-        {
-          "ancestorTitles": [
-            "formatWalletAddress",
-            "边界条件测试"
-          ],
-          "duration": 1,
-          "failing": false,
-          "failureDetails": [],
-          "failureMessages": [],
           "fullName": "formatWalletAddress 边界条件测试 应该返回原地址当地址长度小于或等于格式化长度总和",
           "invocations": 1,
           "location": null,
           "numPassingAsserts": 3,
           "retryReasons": [],
-          "startAt": 1758894911962,
+          "startAt": 1758895524426,
           "status": "passed",
           "title": "应该返回原地址当地址长度小于或等于格式化长度总和"
         },
@@ -164,27 +164,9 @@
           "location": null,
           "numPassingAsserts": 2,
           "retryReasons": [],
-          "startAt": 1758894911963,
+          "startAt": 1758895524427,
           "status": "passed",
           "title": "应该格式化地址当长度大于格式化长度总和"
-        },
-        {
-          "ancestorTitles": [
-            "formatWalletAddress",
-            "边界条件测试"
-          ],
-          "duration": 1,
-          "failing": false,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "formatWalletAddress 边界条件测试 应该正确处理边界长度的地址",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 2,
-          "retryReasons": [],
-          "startAt": 1758894911963,
-          "status": "passed",
-          "title": "应该正确处理边界长度的地址"
         },
         {
           "ancestorTitles": [
@@ -195,12 +177,30 @@
           "failing": false,
           "failureDetails": [],
           "failureMessages": [],
+          "fullName": "formatWalletAddress 边界条件测试 应该正确处理边界长度的地址",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1758895524427,
+          "status": "passed",
+          "title": "应该正确处理边界长度的地址"
+        },
+        {
+          "ancestorTitles": [
+            "formatWalletAddress",
+            "边界条件测试"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
           "fullName": "formatWalletAddress 边界条件测试 应该正确处理自定义长度参数的边界情况",
           "invocations": 1,
           "location": null,
           "numPassingAsserts": 5,
           "retryReasons": [],
-          "startAt": 1758894911964,
+          "startAt": 1758895524427,
           "status": "passed",
           "title": "应该正确处理自定义长度参数的边界情况"
         },
@@ -218,7 +218,7 @@
           "location": null,
           "numPassingAsserts": 2,
           "retryReasons": [],
-          "startAt": 1758894911965,
+          "startAt": 1758895524428,
           "status": "passed",
           "title": "应该保留0x前缀当原地址有前缀时"
         },
@@ -227,7 +227,7 @@
             "formatWalletAddress",
             "0x前缀处理测试"
           ],
-          "duration": 1,
+          "duration": 0,
           "failing": false,
           "failureDetails": [],
           "failureMessages": [],
@@ -236,7 +236,7 @@
           "location": null,
           "numPassingAsserts": 2,
           "retryReasons": [],
-          "startAt": 1758894911965,
+          "startAt": 1758895524429,
           "status": "passed",
           "title": "应该不添加0x前缀当原地址没有前缀时"
         },
@@ -254,7 +254,7 @@
           "location": null,
           "numPassingAsserts": 1,
           "retryReasons": [],
-          "startAt": 1758894911966,
+          "startAt": 1758895524429,
           "status": "passed",
           "title": "应该正确处理只有0x前缀的情况"
         },
@@ -272,7 +272,7 @@
           "location": null,
           "numPassingAsserts": 2,
           "retryReasons": [],
-          "startAt": 1758894911966,
+          "startAt": 1758895524429,
           "status": "passed",
           "title": "应该正确计算带0x前缀地址的长度"
         },
@@ -281,7 +281,7 @@
             "formatWalletAddress",
             "参数验证测试"
           ],
-          "duration": 1,
+          "duration": 0,
           "failing": false,
           "failureDetails": [],
           "failureMessages": [],
@@ -290,7 +290,7 @@
           "location": null,
           "numPassingAsserts": 2,
           "retryReasons": [],
-          "startAt": 1758894911966,
+          "startAt": 1758895524430,
           "status": "passed",
           "title": "应该使用默认参数值"
         },
@@ -308,7 +308,7 @@
           "location": null,
           "numPassingAsserts": 1,
           "retryReasons": [],
-          "startAt": 1758894911967,
+          "startAt": 1758895524430,
           "status": "passed",
           "title": "应该正确处理startLength为0的情况"
         },
@@ -326,7 +326,7 @@
           "location": null,
           "numPassingAsserts": 1,
           "retryReasons": [],
-          "startAt": 1758894911967,
+          "startAt": 1758895524430,
           "status": "passed",
           "title": "应该正确处理endLength为0的情况"
         },
@@ -335,7 +335,7 @@
             "formatWalletAddress",
             "参数验证测试"
           ],
-          "duration": 0,
+          "duration": 1,
           "failing": false,
           "failureDetails": [],
           "failureMessages": [],
@@ -344,7 +344,7 @@
           "location": null,
           "numPassingAsserts": 1,
           "retryReasons": [],
-          "startAt": 1758894911967,
+          "startAt": 1758895524430,
           "status": "passed",
           "title": "应该正确处理两个长度都为0的情况"
         },
@@ -362,7 +362,7 @@
           "location": null,
           "numPassingAsserts": 2,
           "retryReasons": [],
-          "startAt": 1758894911968,
+          "startAt": 1758895524431,
           "status": "passed",
           "title": "应该正确处理endLength为正数的情况"
         },
@@ -371,7 +371,7 @@
             "formatWalletAddress",
             "实际以太坊地址测试"
           ],
-          "duration": 1,
+          "duration": 0,
           "failing": false,
           "failureDetails": [],
           "failureMessages": [],
@@ -380,7 +380,7 @@
           "location": null,
           "numPassingAsserts": 2,
           "retryReasons": [],
-          "startAt": 1758894911968,
+          "startAt": 1758895524431,
           "status": "passed",
           "title": "应该正确格式化真实的以太坊地址"
         },
@@ -398,7 +398,7 @@
           "location": null,
           "numPassingAsserts": 3,
           "retryReasons": [],
-          "startAt": 1758894911969,
+          "startAt": 1758895524432,
           "status": "passed",
           "title": "应该正确处理不同大小写的地址"
         },
@@ -416,7 +416,7 @@
           "location": null,
           "numPassingAsserts": 3,
           "retryReasons": [],
-          "startAt": 1758894911969,
+          "startAt": 1758895524432,
           "status": "passed",
           "title": "应该处理非标准长度的地址"
         },
@@ -425,7 +425,7 @@
             "formatWalletAddress",
             "特殊情况测试"
           ],
-          "duration": 0,
+          "duration": 1,
           "failing": false,
           "failureDetails": [],
           "failureMessages": [],
@@ -434,7 +434,7 @@
           "location": null,
           "numPassingAsserts": 2,
           "retryReasons": [],
-          "startAt": 1758894911970,
+          "startAt": 1758895524432,
           "status": "passed",
           "title": "应该处理地址去掉0x前缀后的截取"
         },
@@ -452,7 +452,7 @@
           "location": null,
           "numPassingAsserts": 4,
           "retryReasons": [],
-          "startAt": 1758894911970,
+          "startAt": 1758895524433,
           "status": "passed",
           "title": "应该验证slice行为"
         },
@@ -470,7 +470,7 @@
           "location": null,
           "numPassingAsserts": 10,
           "retryReasons": [],
-          "startAt": 1758894911970,
+          "startAt": 1758895524433,
           "status": "passed",
           "title": "应该覆盖所有分支"
         },
@@ -488,7 +488,7 @@
           "location": null,
           "numPassingAsserts": 3,
           "retryReasons": [],
-          "startAt": 1758894911971,
+          "startAt": 1758895524434,
           "status": "passed",
           "title": "应该正确处理slice的边界"
         },
@@ -497,7 +497,7 @@
             "formatWalletAddress",
             "覆盖率补充测试"
           ],
-          "duration": 1,
+          "duration": 0,
           "failing": false,
           "failureDetails": [],
           "failureMessages": [],
@@ -506,7 +506,7 @@
           "location": null,
           "numPassingAsserts": 5,
           "retryReasons": [],
-          "startAt": 1758894911971,
+          "startAt": 1758895524434,
           "status": "passed",
           "title": "应该详细验证slice行为"
         },
@@ -515,7 +515,7 @@
             "formatWalletAddress",
             "性能测试"
           ],
-          "duration": 5,
+          "duration": 6,
           "failing": false,
           "failureDetails": [],
           "failureMessages": [],
@@ -524,7 +524,7 @@
           "location": null,
           "numPassingAsserts": 1,
           "retryReasons": [],
-          "startAt": 1758894911972,
+          "startAt": 1758895524434,
           "status": "passed",
           "title": "应该高效处理大量调用"
         },
@@ -533,7 +533,7 @@
             "formatWalletAddress",
             "实际使用场景"
           ],
-          "duration": 0,
+          "duration": 1,
           "failing": false,
           "failureDetails": [],
           "failureMessages": [],
@@ -542,7 +542,7 @@
           "location": null,
           "numPassingAsserts": 3,
           "retryReasons": [],
-          "startAt": 1758894911978,
+          "startAt": 1758895524440,
           "status": "passed",
           "title": "应该适合在UI中显示"
         },
@@ -560,7 +560,7 @@
           "location": null,
           "numPassingAsserts": 3,
           "retryReasons": [],
-          "startAt": 1758894911978,
+          "startAt": 1758895524441,
           "status": "passed",
           "title": "应该处理各种真实场景"
         }
